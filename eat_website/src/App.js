@@ -22,7 +22,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/">
-            <Redirect to="/DashBoard" />
+            <Redirect to="/Home" />
           </Route>
           <Route path="/Home" component={Home} exact></Route>
           <Route path="/Login" component={Login} exact></Route>
