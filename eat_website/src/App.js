@@ -1,9 +1,10 @@
 import React from "react";
-import "./App.css";
-import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import NavBar from "./components/NavBar";
 import BasicPage from "./pages/BasicPage";
+import ResourcePage from "./pages/ResourcePage";
+// import "./css/sb-admin-2.css";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,11 +23,12 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/">
-            <Redirect to="/Home" />
+            <Redirect to="/DashBoard" />
           </Route>
-          <Route path="/Home" component={Home} exact></Route>
+          <Route path="/Dashboard" component={Dashboard} exact></Route>
           <Route path="/Login" component={Login} exact></Route>
           <Route path="/BasicPage" component={BasicPage} exact></Route>
+          <Route path="/ResourcePage" component={ResourcePage} exact></Route>
           <Route>
             <React.Fragment>
               <h1 className="display-1 text-center font-weight-bold">

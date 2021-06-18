@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { SiDell } from "react-icons/si";
 import { Link } from "react-router-dom";
 
+// import "../css/sb-admin-2.css";
+
+export class callMe extends Component {}
+
 export default class NavBar extends Component {
   render() {
     return (
@@ -11,10 +15,11 @@ export default class NavBar extends Component {
           style={{ backgroundColor: "#0076CE" }}
         >
           <div className="container-fluid ">
-            <Link className="navbar-brand" to="/Home">
-              <SiDell size="50" />
-              <span> Technologies</span>
+            <Link className="navbar-brand" to="/Dashboard">
+              <SiDell size="50" className="me-1" />
+              <span>Technologies</span>
             </Link>
+
             <button
               className="navbar-toggler"
               type="button"
@@ -32,13 +37,22 @@ export default class NavBar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li className="nav-item">
-                  <Link className="nav-link " aria-current="page" to="/Home">
-                    Home
+                  <Link
+                    className="nav-link "
+                    aria-current="page"
+                    to="/Dashboard"
+                  >
+                    Dashboard
                   </Link>
                 </li>
                 <li className="nav-item ">
                   <Link className="nav-link" to="/BasicPage">
                     Basic Page
+                  </Link>
+                </li>
+                <li className="nav-item ">
+                  <Link className="nav-link" to="/ResourcePage">
+                    Resource Page
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -87,17 +101,6 @@ export default class NavBar extends Component {
                   </ul>
                 </li> */}
               </ul>
-              <form className="d-flex">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-light" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </nav>
