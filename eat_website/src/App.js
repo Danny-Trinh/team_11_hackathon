@@ -3,6 +3,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import NavBar from "./components/NavBar";
 import BasicPage from "./pages/BasicPage";
+import AboutPage from "./pages/AboutPage";
 import ResourcePage from "./pages/ResourcePage";
 // import "./css/sb-admin-2.css";
 import {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Dashboard" component={Dashboard} exact></Route>
           <Route path="/Login" component={Login} exact></Route>
           <Route path="/BasicPage" component={BasicPage} exact></Route>
+          <Route path="/AboutPage" component={AboutPage} exact></Route>
           <Route path="/ResourcePage" component={ResourcePage} exact></Route>
           <Route>
             <React.Fragment>
