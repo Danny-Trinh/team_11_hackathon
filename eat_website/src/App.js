@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import BasicPage from "./pages/BasicPage";
 import AboutPage from "./pages/AboutPage";
 import ResourcePage from "./pages/ResourcePage";
-// import "./css/sb-admin-2.css";
+import ChatBot from "./components/ChatBot/ChatBot";
 import {
   BrowserRouter as Router,
   Switch,
@@ -41,6 +41,7 @@ function App() {
             );
           </Route>
         </Switch>
+        <ChatBot />
       </div>
     </Router>
   );

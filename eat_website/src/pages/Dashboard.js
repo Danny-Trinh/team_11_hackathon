@@ -202,17 +202,15 @@ export default class BasicPage extends Component {
                           Dropdown Card Example
                         </h6>
                         <div class="dropdown no-arrow">
-                          <a
+                          <button
                             class="dropdown-toggle"
-                            href="#"
-                            role="button"
                             id="dropdownMenuLink"
                             data-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
                             <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                          </a>
+                          </button>
                           <div
                             class="
                           dropdown-menu dropdown-menu-right
@@ -222,16 +220,14 @@ export default class BasicPage extends Component {
                             aria-labelledby="dropdownMenuLink"
                           >
                             <div class="dropdown-header">Dropdown Header:</div>
-                            <a class="dropdown-item" href="#">
-                              Action
-                            </a>
-                            <a class="dropdown-item" href="#">
+                            <button class="dropdown-item">Action</button>
+                            <button class="dropdown-item">
                               Another action
-                            </a>
+                            </button>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">
+                            <button class="dropdown-item">
                               Something else here
-                            </a>
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -248,18 +244,17 @@ export default class BasicPage extends Component {
                     {/* <!-- Collapsable Card Example --> */}
                     <div class="card shadow mb-4">
                       {/* <!-- Card Header - Accordion --> */}
-                      <a
+                      <button
                         href="#collapseCardExample"
                         class="d-block card-header py-3"
                         data-toggle="collapse"
-                        role="button"
                         aria-expanded="true"
                         aria-controls="collapseCardExample"
                       >
                         <h6 class="m-0 font-weight-bold text-primary">
                           Collapsable Card Example
                         </h6>
-                      </a>
+                      </button>
                       {/* <!-- Card Content - Collapse --> */}
                       <div class="collapse show" id="collapseCardExample">
                         <div class="card-body">
