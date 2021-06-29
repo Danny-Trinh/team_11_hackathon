@@ -1,11 +1,11 @@
 /* learning options css */
-.learning-options-container {
+.options-container {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 
-.learning-option-button {
+.option-button {
   padding: 0.5rem;
   border-radius: 25px;
   background: transparent;
@@ -19,10 +19,17 @@
 
 .link-list-item {
   text-align: left;
-  font-size: 0.9rem;
 }
 
-.link-list-item-url {
+ul.link-list {
+  list-style-type: none;
+}
+
+.option-link {
+  text-decoration: none;
+  color: black;
+}
+/* .link-list-item-url {
   text-decoration: none;
   margin: 6px;
   display: block;
@@ -31,4 +38,12 @@
   padding: 8px;
   border-radius: 3px;
   box-shadow: 2px 2px 4px rgba(150, 149, 149, 0.4);
+} */
+
+.react-chatbot-kit-chat-input-container {
+  display: none !important;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  margin-bottom: 0 !important;
 }

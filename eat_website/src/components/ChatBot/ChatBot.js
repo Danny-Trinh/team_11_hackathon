@@ -7,7 +7,13 @@ import config from "./config";
 export default class ChatBot extends Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "0",
+          right: "0",
+        }}
+      >
         <Chatbot
           config={config}
           actionProvider={ActionProvider}

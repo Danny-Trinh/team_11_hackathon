@@ -2,17 +2,17 @@ import React from "react";
 
 export const LinkList = (props) => {
   const linkMarkup = props.options.map((link) => (
-    <li key={link.id} className="link-list-item">
+    <div key={link.id} className="option-button">
       <a
+        className="option-link"
         href={link.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="link-list-item-url"
       >
         {link.text}
       </a>
-    </li>
+    </div>
   ));
 
-  return <ul className="link-list">{linkMarkup}</ul>;
+  return <div className="options-container">{linkMarkup}</div>;
 };

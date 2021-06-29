@@ -1,27 +1,44 @@
 import React from "react";
 
-export const LearningOptions = (props) => {
+export const IntroOptions = (props) => {
   const options = [
     {
-      text: "Javascript",
-      handler: props.actionProvider.handleJavascriptList,
+      text: "I would like to be shown all assistive technologies",
+      handler: () => {},
       id: 1,
     },
-    { text: "Data visualization", handler: () => {}, id: 2 },
-    { text: "APIs", handler: () => {}, id: 3 },
-    { text: "Security", handler: () => {}, id: 4 },
-    { text: "Interview prep", handler: () => {}, id: 5 },
+    {
+      text: "I would like to identify assistive technologies that I may need",
+      handler: () => {},
+      id: 2,
+    },
+    {
+      text: "I know what assistive technology I would like to order",
+      handler: () => {
+        props.actionProvider.generalHandler(
+          "Great! Click on the link below to be directed to MyIT to order an assistive technology:",
+          "ATOrders"
+        );
+      },
+      id: 3,
+    },
+    {
+      text: "I have a suggestion for assistive technologies",
+      handler: () => {
+        props.actionProvider.generalHandler(
+          "Fantastic! Click on the link below to be directed our suggestion form:",
+          "ATSuggestions"
+        );
+      },
+      id: 4,
+    },
   ];
 
   const optionsMarkup = options.map((option) => (
-    <button
-      className="learning-option-button"
-      key={option.id}
-      onClick={option.handler}
-    >
+    <button className="option-button" key={option.id} onClick={option.handler}>
       {option.text}
     </button>
   ));
 
-  return <div className="learning-options-container">{optionsMarkup}</div>;
+  return <div className="options-container">{optionsMarkup}</div>;
 };

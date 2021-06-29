@@ -4,13 +4,10 @@ class ActionProvider {
     this.setState = setStateFunc;
   }
 
-  handleJavascriptList = () => {
-    const message = this.createChatBotMessage(
-      "Fantastic, I've got the following resources for you on Javascript:",
-      {
-        widget: "javascriptLinks",
-      }
-    );
+  generalHandler = (text, widget) => {
+    const message = this.createChatBotMessage(text, {
+      widget: widget,
+    });
 
     this.updateChatbotState(message);
   };
