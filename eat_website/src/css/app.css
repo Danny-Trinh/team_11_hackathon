@@ -46,4 +46,9 @@ ul.link-list {
 
 .react-chatbot-kit-chat-inner-container {
   margin-bottom: 0 !important;
+  height: auto !important;
+}
+.react-chatbot-kit-chat-container {
+  width: 500px !important;
+  height: auto !important;
 }
