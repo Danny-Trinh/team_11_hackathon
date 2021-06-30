@@ -57,7 +57,7 @@ export default class NavBar extends Component {
                 </li>
                 <li className="nav-item ">
                   <Link className="nav-link" to="/ResourcePage">
-                    Resource Page
+                    Resources
                   </Link>
                 </li>
                 <li className="nav-item">

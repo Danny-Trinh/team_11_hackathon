@@ -7,10 +7,11 @@
 
 .option-button {
   padding: 0.5rem;
-  border-radius: 25px;
+  border-radius: 10px;
   background: transparent;
   border: 1px solid green;
   margin: 3px;
+  text-align: left;
 }
 
 .link-list {
@@ -48,7 +49,16 @@ ul.link-list {
   margin-bottom: 0 !important;
   height: auto !important;
 }
+
 .react-chatbot-kit-chat-container {
-  width: 500px !important;
+  width: 350px !important;
   height: auto !important;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  margin-left: 10px !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+  overflow-x: hidden !important;
 }

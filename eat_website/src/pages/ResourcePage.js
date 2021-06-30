@@ -188,6 +188,7 @@ export default class ResourcePage extends Component {
               LINK
             </button>
           </a>
+          <hr></hr>
           <h5>Accessibility Checker</h5>
           <span class="tab"></span>Use Windows Magnifier to make all or part of
           your screen bigger for word and image clarity.
@@ -196,6 +197,7 @@ export default class ResourcePage extends Component {
               LINK
             </button>
           </a>
+          <hr></hr>
           <h5>Microsoft Translator</h5>
           <span class="tab"></span>Use Windows Magnifier to make all or part of
           your screen bigger for word and image clarity.

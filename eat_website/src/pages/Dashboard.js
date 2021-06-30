@@ -3,29 +3,29 @@ import React, { Component } from "react";
 export default class BasicPage extends Component {
   render() {
     return (
-      <div className="container pt-4">
+      <div classNameName="container pt-4">
         {/* <!-- Page Wrapper --> */}
         <div id="wrapper">
           {/* <!-- Content Wrapper --> */}
-          <div id="content-wrapper" class="d-flex flex-column">
+          <div id="content-wrapper" className="d-flex flex-column">
             {/* <!-- Main Content --> */}
             <div id="content">
               {/* <!-- Begin Page Content --> */}
-              <div class="container-fluid">
+              <div className="container-fluid">
                 {/* <!-- Page Heading --> */}
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                  <h1 class="h3 mb-0 text-gray-800">Cards</h1>
+                <div className="d-sm-flex align-items-center justify-content-between mb-4">
+                  <h1 className="h3 mb-0 text-gray-800">Cards</h1>
                 </div>
 
-                <div class="row">
+                <div className="row">
                   {/* <!-- Earnings (Monthly) Card Example --> */}
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-primary shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
+                  <div className="col-xl-3 col-md-6 mb-4">
+                    <div className="card border-left-primary shadow h-100 py-2">
+                      <div className="card-body">
+                        <div className="row no-gutters align-items-center">
+                          <div className="col mr-2">
                             <div
-                              class="
+                              className="
                             text-xs
                             font-weight-bold
                             text-primary text-uppercase
@@ -34,12 +34,12 @@ export default class BasicPage extends Component {
                             >
                               Earnings (Monthly)
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                            <div className="h5 mb-0 font-weight-bold text-gray-800">
                               $40,000
                             </div>
                           </div>
-                          <div class="col-auto">
-                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                          <div className="col-auto">
+                            <i className="fas fa-calendar fa-2x text-gray-300"></i>
                           </div>
                         </div>
                       </div>
@@ -47,13 +47,13 @@ export default class BasicPage extends Component {
                   </div>
 
                   {/* <!-- Earnings (Annual) Card Example --> */}
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-success shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
+                  <div className="col-xl-3 col-md-6 mb-4">
+                    <div className="card border-left-success shadow h-100 py-2">
+                      <div className="card-body">
+                        <div className="row no-gutters align-items-center">
+                          <div className="col mr-2">
                             <div
-                              class="
+                              className="
                             text-xs
                             font-weight-bold
                             text-success text-uppercase
@@ -62,12 +62,12 @@ export default class BasicPage extends Component {
                             >
                               Earnings (Annual)
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                            <div className="h5 mb-0 font-weight-bold text-gray-800">
                               $215,000
                             </div>
                           </div>
-                          <div class="col-auto">
-                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                          <div className="col-auto">
+                            <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
                           </div>
                         </div>
                       </div>
@@ -75,13 +75,13 @@ export default class BasicPage extends Component {
                   </div>
 
                   {/* <!-- Tasks Card Example --> */}
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-info shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
+                  <div className="col-xl-3 col-md-6 mb-4">
+                    <div className="card border-left-info shadow h-100 py-2">
+                      <div className="card-body">
+                        <div className="row no-gutters align-items-center">
+                          <div className="col mr-2">
                             <div
-                              class="
+                              className="
                             text-xs
                             font-weight-bold
                             text-info text-uppercase
@@ -90,10 +90,10 @@ export default class BasicPage extends Component {
                             >
                               Tasks
                             </div>
-                            <div class="row no-gutters align-items-center">
-                              <div class="col-auto">
+                            <div className="row no-gutters align-items-center">
+                              <div className="col-auto">
                                 <div
-                                  class="
+                                  className="
                                 h5
                                 mb-0
                                 mr-3
@@ -104,10 +104,10 @@ export default class BasicPage extends Component {
                                   50%
                                 </div>
                               </div>
-                              <div class="col">
-                                <div class="progress progress-sm mr-2">
+                              <div className="col">
+                                <div className="progress progress-sm mr-2">
                                   <div
-                                    class="progress-bar bg-info"
+                                    className="progress-bar bg-info"
                                     role="progressbar"
                                     style={{ width: "50%" }}
                                     aria-valuenow="50"
@@ -118,8 +118,8 @@ export default class BasicPage extends Component {
                               </div>
                             </div>
                           </div>
-                          <div class="col-auto">
-                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                          <div className="col-auto">
+                            <i className="fas fa-clipboard-list fa-2x text-gray-300"></i>
                           </div>
                         </div>
                       </div>
@@ -127,13 +127,13 @@ export default class BasicPage extends Component {
                   </div>
 
                   {/* <!-- Pending Requests Card Example --> */}
-                  <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-warning shadow h-100 py-2">
-                      <div class="card-body">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col mr-2">
+                  <div className="col-xl-3 col-md-6 mb-4">
+                    <div className="card border-left-warning shadow h-100 py-2">
+                      <div className="card-body">
+                        <div className="row no-gutters align-items-center">
+                          <div className="col mr-2">
                             <div
-                              class="
+                              className="
                             text-xs
                             font-weight-bold
                             text-warning text-uppercase
@@ -142,12 +142,12 @@ export default class BasicPage extends Component {
                             >
                               Pending Requests
                             </div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                            <div className="h5 mb-0 font-weight-bold text-gray-800">
                               18
                             </div>
                           </div>
-                          <div class="col-auto">
-                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                          <div className="col-auto">
+                            <i className="fas fa-comments fa-2x text-gray-300"></i>
                           </div>
                         </div>
                       </div>
@@ -155,41 +155,41 @@ export default class BasicPage extends Component {
                   </div>
                 </div>
 
-                <div class="row">
-                  <div class="col-lg-6">
+                <div className="row">
+                  <div className="col-lg-6">
                     {/* <!-- Default Card Example --> */}
-                    <div class="card mb-4">
-                      <div class="card-header">Default Card Example</div>
-                      <div class="card-body">
+                    <div className="card mb-4">
+                      <div className="card-header">Default Card Example</div>
+                      <div className="card-body">
                         This card uses Bootstrap's default styling with no
-                        utility classes added. Global styles are the only things
-                        modifying the look and feel of this default card
+                        utility classNamees added. Global styles are the only
+                        things modifying the look and feel of this default card
                         example.
                       </div>
                     </div>
 
                     {/* <!-- Basic Card Example --> */}
-                    <div class="card shadow mb-4">
-                      <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">
+                    <div className="card shadow mb-4">
+                      <div className="card-header py-3">
+                        <h6 className="m-0 font-weight-bold text-primary">
                           Basic Card Example
                         </h6>
                       </div>
-                      <div class="card-body">
+                      <div className="card-body">
                         The styling for this basic card example is created by
-                        using default Bootstrap utility classes. By using
-                        utility classes, the style of the card component can be
-                        easily modified with no need for any custom CSS!
+                        using default Bootstrap utility classNamees. By using
+                        utility classNamees, the style of the card component can
+                        be easily modified with no need for any custom CSS!
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-6">
+                  <div className="col-lg-6">
                     {/* <!-- Dropdown Card Example --> */}
-                    <div class="card shadow mb-4">
+                    <div className="card shadow mb-4">
                       {/* <!-- Card Header - Dropdown --> */}
                       <div
-                        class="
+                        className="
                       card-header
                       py-3
                       d-flex
@@ -198,41 +198,43 @@ export default class BasicPage extends Component {
                       justify-content-between
                     "
                       >
-                        <h6 class="m-0 font-weight-bold text-primary">
+                        <h6 className="m-0 font-weight-bold text-primary">
                           Dropdown Card Example
                         </h6>
-                        <div class="dropdown no-arrow">
+                        <div className="dropdown no-arrow">
                           <button
-                            class="dropdown-toggle"
+                            className="dropdown-toggle"
                             id="dropdownMenuLink"
                             data-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                            <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                           </button>
                           <div
-                            class="
+                            className="
                           dropdown-menu dropdown-menu-right
                           shadow
                           animated--fade-in
                         "
                             aria-labelledby="dropdownMenuLink"
                           >
-                            <div class="dropdown-header">Dropdown Header:</div>
-                            <button class="dropdown-item">Action</button>
-                            <button class="dropdown-item">
+                            <div className="dropdown-header">
+                              Dropdown Header:
+                            </div>
+                            <button className="dropdown-item">Action</button>
+                            <button className="dropdown-item">
                               Another action
                             </button>
-                            <div class="dropdown-divider"></div>
-                            <button class="dropdown-item">
+                            <div className="dropdown-divider"></div>
+                            <button className="dropdown-item">
                               Something else here
                             </button>
                           </div>
                         </div>
                       </div>
                       {/* <!-- Card Body --> */}
-                      <div class="card-body">
+                      <div className="card-body">
                         Dropdown menus can be placed in the card header in order
                         to extend the functionality of a basic card. In this
                         dropdown card example, the Font Awesome vertical
@@ -242,22 +244,22 @@ export default class BasicPage extends Component {
                     </div>
 
                     {/* <!-- Collapsable Card Example --> */}
-                    <div class="card shadow mb-4">
+                    <div className="card shadow mb-4">
                       {/* <!-- Card Header - Accordion --> */}
                       <button
                         href="#collapseCardExample"
-                        class="d-block card-header py-3"
+                        className="d-block card-header py-3"
                         data-toggle="collapse"
                         aria-expanded="true"
                         aria-controls="collapseCardExample"
                       >
-                        <h6 class="m-0 font-weight-bold text-primary">
+                        <h6 className="m-0 font-weight-bold text-primary">
                           Collapsable Card Example
                         </h6>
                       </button>
                       {/* <!-- Card Content - Collapse --> */}
-                      <div class="collapse show" id="collapseCardExample">
-                        <div class="card-body">
+                      <div className="collapse show" id="collapseCardExample">
+                        <div className="card-body">
                           This is a collapsable card example using Bootstrap's
                           built in collapse functionality.
                           <strong>Click on the card header</strong> to see the
@@ -273,9 +275,9 @@ export default class BasicPage extends Component {
             {/* <!-- End of Main Content --> */}
 
             {/* <!-- Footer --> */}
-            <footer class="sticky-footer bg-white">
-              <div class="container my-auto">
-                <div class="copyright text-center my-auto">
+            <footer className="sticky-footer bg-white">
+              <div className="container my-auto">
+                <div className="copyright text-center my-auto">
                   <span>Copyright &copy; Your Website 2020</span>
                 </div>
               </div>
