@@ -45,3 +45,9 @@ code {
 .header {
   color: #3287c1;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

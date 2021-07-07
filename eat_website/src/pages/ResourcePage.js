@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import ResourcesHeader from '../ResourcesHeader.jpg'
+import ResourcesHeader from '../img/ResourcesHeader.jpg'
 
 export default class ResourcePage extends Component {
   render() {
     return (
       <div className="container">
-        <img src={ResourcesHeader} style={{ height: 500}}/>
+        <img src={ResourcesHeader} class="center" style={{ height: 400}} alt=""/>
 
         <h1>
           <center>Resources</center>
