@@ -19,6 +19,7 @@ function App() {
       <div
         style={{
           minHeight: "100vh",
+          backgroundColor: "#f7f7f8",
         }}
       >
         <NavBar />

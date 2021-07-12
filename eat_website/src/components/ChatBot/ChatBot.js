@@ -8,7 +8,7 @@ import { AiFillCloseSquare } from "react-icons/ai";
 import { IoIosChatboxes } from "react-icons/io";
 
 export default function ChatBot(props) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <React.Fragment>
       {!open && (
@@ -21,13 +21,13 @@ export default function ChatBot(props) {
             right: "2%",
           }}
         >
-          <IoIosChatboxes size="50" />
+          <IoIosChatboxes size="40" />
         </button>
       )}
 
       {open && (
         <div
-          className="shadow bg-body rounded"
+          className="border border-dark shadow bg-body rounded"
           style={{
             position: "fixed",
             // bottom: "3%",
@@ -36,13 +36,13 @@ export default function ChatBot(props) {
           }}
         >
           <button
-            className="p-0 border-0"
+            className="p-0 m-0 border-0"
             onClick={() => setOpen(false)}
             style={{
               position: "fixed",
               zIndex: "10",
-              right: "2%",
-              color: "#cccccc",
+              right: "2.1%",
+              color: "#0076CE",
             }}
           >
             <AiFillCloseSquare size="35" />

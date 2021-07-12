@@ -1,11 +1,17 @@
 import React, { Component } from "react";
-import ResourcesHeader from '../img/ResourcesHeader.jpg'
+import ResourcesHeader from "../img/ResourcesHeader.jpg";
+import "../css/resource.css";
 
 export default class ResourcePage extends Component {
   render() {
     return (
       <div className="container">
-        <img src={ResourcesHeader} class="center" style={{ height: 400}} alt=""/>
+        <img
+          src={ResourcesHeader}
+          class="img-fluid, center"
+          style={{ maxWidth: "85%" }}
+          alt="Decrative header"
+        />
 
         <h1>
           <center>Resources</center>
@@ -84,7 +90,7 @@ export default class ResourcePage extends Component {
           <h5>Natural Reader</h5>
           <span class="tab"></span>Dark mode is for those who find bright
           displays problematic.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>
@@ -93,7 +99,7 @@ export default class ResourcePage extends Component {
           <h5>JAWS (Jobs Access with Speech)</h5>
           <span class="tab"></span>Use Windows Magnifier to make all or part of
           your screen bigger for word and image clarity.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>
@@ -102,7 +108,7 @@ export default class ResourcePage extends Component {
           <h5>SofType5</h5>
           <span class="tab"></span>Dark mode is for those who find bright
           displays problematic.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>
@@ -111,7 +117,7 @@ export default class ResourcePage extends Component {
           <h5>ZoomText</h5>
           <span class="tab"></span>Dark mode is for those who find bright
           displays problematic.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>
@@ -120,7 +126,7 @@ export default class ResourcePage extends Component {
           <h5>Braillenote Touch 32 Plus</h5>
           <span class="tab"></span>Dark mode is for those who find bright
           displays problematic.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>
@@ -129,7 +135,7 @@ export default class ResourcePage extends Component {
           <h5>32" Monitor</h5>
           <span class="tab"></span>Dark mode is for those who find bright
           displays problematic.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>
@@ -138,7 +144,7 @@ export default class ResourcePage extends Component {
           <h5>Focus 40 Blue</h5>
           <span class="tab"></span>Dark mode is for those who find bright
           displays problematic.
-          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10							">
+          <a href="https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10">
             <button type="button" class="btn">
               LINK
             </button>

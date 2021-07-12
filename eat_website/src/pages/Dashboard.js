@@ -1,293 +1,80 @@
 import React, { Component } from "react";
+import Services from "../json/services.json";
+import Select from "react-select";
 
-export default class BasicPage extends Component {
+const disabilitiesOptions = [
+  { value: "visual", label: "Blindness or blurry vision" },
+  { value: "auditory", label: "Hearing Impairment" },
+  { value: "mobility", label: "Mobility impairment" },
+  { value: "migranes", label: "Migranes" },
+  { value: "anxiety", label: "Anxiety" },
+  { value: "addisons", label: "Addison's Disease" },
+  { value: "autism", label: "Autism" },
+  { value: "dyslexia", label: "Dyslexia" },
+  { value: "add", label: "Attention Deficit Disorder (ADD)" },
+  { value: "adhd", label: "Attention Deficit-Hyperactivity Disorder (ADHD)" },
+];
+
+export default class Dashboard extends Component {
+  state = {
+    disabilities: [disabilitiesOptions[0]],
+  };
+
+  renderTechnologies = () => {
+    let result = [];
+    this.state.disabilities.forEach((disability) => {
+      let num = 1;
+      Services[disability.value].forEach((value) => {
+        result.push(
+          <div className="my-3" key={num}>
+            <div className="card h-100 border shadow-sm">
+              <div className="card-body">
+                <a className="custom-link" href={value.link}>
+                  <h5 className="card-title">{value.name}</h5>
+                </a>
+                <p className="card-text ">{value.desc}</p>
+              </div>
+            </div>
+          </div>
+        );
+        num++;
+      });
+    });
+    return <div className="row row-cols-2 row-cols-md-3">{result}</div>;
+  };
+
   render() {
     return (
-      <div classNameName="container pt-4">
-        {/* <!-- Page Wrapper --> */}
-        <div id="wrapper">
-          {/* <!-- Content Wrapper --> */}
-          <div id="content-wrapper" className="d-flex flex-column">
-            {/* <!-- Main Content --> */}
-            <div id="content">
-              {/* <!-- Begin Page Content --> */}
-              <div className="container-fluid">
-                {/* <!-- Page Heading --> */}
-                <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                  <h1 className="h3 mb-0 text-gray-800">Cards</h1>
-                </div>
+      <React.Fragment>
+        <div className="container">
+          <div className="row my-5">
+            <div className="col-8 center">
+              <div
+                className="card border shadow-sm"
+                style={{ backgroundColor: "#e8f4f8" }}
+              >
+                <div className="card-body">
+                  <p>Name: Danny Trinh</p>
+                  <p>Resources Needed: </p>
 
-                <div className="row">
-                  {/* <!-- Earnings (Monthly) Card Example --> */}
-                  <div className="col-xl-3 col-md-6 mb-4">
-                    <div className="card border-left-primary shadow h-100 py-2">
-                      <div className="card-body">
-                        <div className="row no-gutters align-items-center">
-                          <div className="col mr-2">
-                            <div
-                              className="
-                            text-xs
-                            font-weight-bold
-                            text-primary text-uppercase
-                            mb-1
-                          "
-                            >
-                              Earnings (Monthly)
-                            </div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">
-                              $40,000
-                            </div>
-                          </div>
-                          <div className="col-auto">
-                            <i className="fas fa-calendar fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* <!-- Earnings (Annual) Card Example --> */}
-                  <div className="col-xl-3 col-md-6 mb-4">
-                    <div className="card border-left-success shadow h-100 py-2">
-                      <div className="card-body">
-                        <div className="row no-gutters align-items-center">
-                          <div className="col mr-2">
-                            <div
-                              className="
-                            text-xs
-                            font-weight-bold
-                            text-success text-uppercase
-                            mb-1
-                          "
-                            >
-                              Earnings (Annual)
-                            </div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">
-                              $215,000
-                            </div>
-                          </div>
-                          <div className="col-auto">
-                            <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* <!-- Tasks Card Example --> */}
-                  <div className="col-xl-3 col-md-6 mb-4">
-                    <div className="card border-left-info shadow h-100 py-2">
-                      <div className="card-body">
-                        <div className="row no-gutters align-items-center">
-                          <div className="col mr-2">
-                            <div
-                              className="
-                            text-xs
-                            font-weight-bold
-                            text-info text-uppercase
-                            mb-1
-                          "
-                            >
-                              Tasks
-                            </div>
-                            <div className="row no-gutters align-items-center">
-                              <div className="col-auto">
-                                <div
-                                  className="
-                                h5
-                                mb-0
-                                mr-3
-                                font-weight-bold
-                                text-gray-800
-                              "
-                                >
-                                  50%
-                                </div>
-                              </div>
-                              <div className="col">
-                                <div className="progress progress-sm mr-2">
-                                  <div
-                                    className="progress-bar bg-info"
-                                    role="progressbar"
-                                    style={{ width: "50%" }}
-                                    aria-valuenow="50"
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
-                                  ></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-auto">
-                            <i className="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* <!-- Pending Requests Card Example --> */}
-                  <div className="col-xl-3 col-md-6 mb-4">
-                    <div className="card border-left-warning shadow h-100 py-2">
-                      <div className="card-body">
-                        <div className="row no-gutters align-items-center">
-                          <div className="col mr-2">
-                            <div
-                              className="
-                            text-xs
-                            font-weight-bold
-                            text-warning text-uppercase
-                            mb-1
-                          "
-                            >
-                              Pending Requests
-                            </div>
-                            <div className="h5 mb-0 font-weight-bold text-gray-800">
-                              18
-                            </div>
-                          </div>
-                          <div className="col-auto">
-                            <i className="fas fa-comments fa-2x text-gray-300"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row">
-                  <div className="col-lg-6">
-                    {/* <!-- Default Card Example --> */}
-                    <div className="card mb-4">
-                      <div className="card-header">Default Card Example</div>
-                      <div className="card-body">
-                        This card uses Bootstrap's default styling with no
-                        utility classNamees added. Global styles are the only
-                        things modifying the look and feel of this default card
-                        example.
-                      </div>
-                    </div>
-
-                    {/* <!-- Basic Card Example --> */}
-                    <div className="card shadow mb-4">
-                      <div className="card-header py-3">
-                        <h6 className="m-0 font-weight-bold text-primary">
-                          Basic Card Example
-                        </h6>
-                      </div>
-                      <div className="card-body">
-                        The styling for this basic card example is created by
-                        using default Bootstrap utility classNamees. By using
-                        utility classNamees, the style of the card component can
-                        be easily modified with no need for any custom CSS!
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6">
-                    {/* <!-- Dropdown Card Example --> */}
-                    <div className="card shadow mb-4">
-                      {/* <!-- Card Header - Dropdown --> */}
-                      <div
-                        className="
-                      card-header
-                      py-3
-                      d-flex
-                      flex-row
-                      align-items-center
-                      justify-content-between
-                    "
-                      >
-                        <h6 className="m-0 font-weight-bold text-primary">
-                          Dropdown Card Example
-                        </h6>
-                        <div className="dropdown no-arrow">
-                          <button
-                            className="dropdown-toggle"
-                            id="dropdownMenuLink"
-                            data-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                          </button>
-                          <div
-                            className="
-                          dropdown-menu dropdown-menu-right
-                          shadow
-                          animated--fade-in
-                        "
-                            aria-labelledby="dropdownMenuLink"
-                          >
-                            <div className="dropdown-header">
-                              Dropdown Header:
-                            </div>
-                            <button className="dropdown-item">Action</button>
-                            <button className="dropdown-item">
-                              Another action
-                            </button>
-                            <div className="dropdown-divider"></div>
-                            <button className="dropdown-item">
-                              Something else here
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                      {/* <!-- Card Body --> */}
-                      <div className="card-body">
-                        Dropdown menus can be placed in the card header in order
-                        to extend the functionality of a basic card. In this
-                        dropdown card example, the Font Awesome vertical
-                        ellipsis icon in the card header can be clicked on in
-                        order to toggle a dropdown menu.
-                      </div>
-                    </div>
-
-                    {/* <!-- Collapsable Card Example --> */}
-                    <div className="card shadow mb-4">
-                      {/* <!-- Card Header - Accordion --> */}
-                      <button
-                        href="#collapseCardExample"
-                        className="d-block card-header py-3"
-                        data-toggle="collapse"
-                        aria-expanded="true"
-                        aria-controls="collapseCardExample"
-                      >
-                        <h6 className="m-0 font-weight-bold text-primary">
-                          Collapsable Card Example
-                        </h6>
-                      </button>
-                      {/* <!-- Card Content - Collapse --> */}
-                      <div className="collapse show" id="collapseCardExample">
-                        <div className="card-body">
-                          This is a collapsable card example using Bootstrap's
-                          built in collapse functionality.
-                          <strong>Click on the card header</strong> to see the
-                          card body collapse and expand!
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <Select
+                    // aria-labelledby="aria-label"
+                    // ariaLiveMessages={{
+                    //   onFocus,
+                    // }}
+                    isMulti
+                    options={disabilitiesOptions}
+                    value={this.state.disabilities}
+                    onChange={(value) => this.setState({ disabilities: value })}
+                  />
                 </div>
               </div>
-              {/* <!-- /.container-fluid --> */}
             </div>
-            {/* <!-- End of Main Content --> */}
-
-            {/* <!-- Footer --> */}
-            <footer className="sticky-footer bg-white">
-              <div className="container my-auto">
-                <div className="copyright text-center my-auto">
-                  <span>Copyright &copy; Your Website 2020</span>
-                </div>
-              </div>
-            </footer>
-            {/* <!-- End of Footer --> */}
           </div>
-          {/* <!-- End of Content Wrapper --> */}
+          <h3>Your Assistive Technologies</h3>
+          {this.renderTechnologies()}
         </div>
-        {/* <!-- End of Page Wrapper --> */}
-      </div>
+      </React.Fragment>
     );
   }
 }

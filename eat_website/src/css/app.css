@@ -1,7 +1,20 @@
+/* personal css */
+a.custom-link {
+  color: #1e81b0;
+  background-color: transparent;
+  text-decoration: none;
+}
+a.custom-link:hover {
+  color: #014564;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 /* learning options css */
 .options-container {
   display: flex;
   align-items: flex-start;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -11,6 +24,7 @@
   background: transparent;
   border: 1px solid green;
   margin: 3px;
+  max-width: 250px;
   text-align: left;
 }
 
@@ -57,6 +71,7 @@ ul.link-list {
 
 .react-chatbot-kit-chat-bot-message {
   margin-left: 10px !important;
+  width: 250px !important;
 }
 
 .react-chatbot-kit-chat-message-container {

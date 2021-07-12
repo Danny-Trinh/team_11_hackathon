@@ -1,0 +1,117 @@
+{
+  "visual": [
+    {
+      "name": "Windows Magnifier",
+      "desc": "Use Windows Magnifier to make all or part of your screen bigger for word and image clarity.",
+      "link": "https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198"
+    },
+    {
+      "name": "Dark Mode",
+      "desc": "Dark mode is for those who find bright displays problematic.",
+      "link": "https://support.microsoft.com/en-us/windows/use-color-filters-in-windows-10-43893e44-b8b3-2e27-1a29-b0c15ef0e5ce"
+    },
+    {
+      "name": "Read Aloud",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/office/listen-to-your-word-documents-5a2de7f3-1ef4-4795-b24e-64fc2731b001"
+    },
+    {
+      "name": "Immersive Reader",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/topic/use-immersive-reader-in-microsoft-teams-a700c0d0-bc53-4696-a94d-4fbc86ac7a9a1"
+    },
+    {
+      "name": "Dictate",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/office/dictate-in-microsoft-365-eab203e1-d030-43c1-84ef-999b0b9675fe"
+    },
+    {
+      "name": "NVDA (NonVisual Desktop Access)",
+      "desc": "",
+      "link": "https://www.dell.com/Identity/global/LoginOrRegister/a2fbc49e-ac99-4289-830f-774a9a0ce9dd?feir=1"
+    },
+    {
+      "name": "Windows Narrator",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
+    },
+    {
+      "name": "Natural Reader",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    },
+    {
+      "name": "JAWS (Jobs Access with Speech)",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    },
+    {
+      "name": "SofType5",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    },
+    {
+      "name": "ZoomText",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    },
+    {
+      "name": "Braillenote Touch 32 Plus",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    },
+    {
+      "name": "32\" Monitor",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    },
+    {
+      "name": "Focus 40 Blue",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    }
+  ],
+  "auditory": [
+    {
+      "name": "Closed Captions (Teams)",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
+    },
+    {
+      "name": "Closed Captions (Zoom)",
+      "desc": "",
+      "link": "https://support.zoom.us/hc/en-us/articles/207279736-Managing-and-viewing-closed-captioning#h_4cb4e874-d574-4e40-ab12-7d8fae1f71cc"
+    },
+    {
+      "name": "Naturally Speaking",
+      "desc": "",
+      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
+    }
+  ],
+
+  "mobility": [],
+  "migranes": [],
+  "anxiety": [],
+  "addisons": [],
+  "autism": [],
+  "dyslexia": [],
+  "add": [],
+  "adhd": [],
+  "other": [
+    {
+      "name": "Windows Ease of Access",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/windows/make-your-pc-easier-to-use-1c313f8f-8bc3-4e1c-c1c8-efe173a94845"
+    },
+    {
+      "name": "Accessibility Checker",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f"
+    },
+    {
+      "name": "Windows Ease of Access",
+      "desc": "",
+      "link": "https://support.microsoft.com/en-us/topic/translate-text-into-a-different-language-287380e4-a56c-48a1-9977-f2dca89ce93f?ui=en-us&rs=en-us&ad=us"
+    }
+  ]
+}
