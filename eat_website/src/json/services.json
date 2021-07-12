@@ -2,89 +2,84 @@
   "visual": [
     {
       "name": "Windows Magnifier",
-      "desc": "Use Windows Magnifier to make all or part of your screen bigger for word and image clarity.",
+      "desc": "Magnify all or part of your screen for clarity",
       "link": "https://support.microsoft.com/en-us/windows/use-magnifier-to-make-things-on-the-screen-easier-to-see-414948ba-8b1c-d3bd-8615-0e5e32204198"
     },
     {
       "name": "Dark Mode",
-      "desc": "Dark mode is for those who find bright displays problematic.",
+      "desc": "For those who find bright displays problematic or helps distinguish between things that differ only by color by applying the color filter",
       "link": "https://support.microsoft.com/en-us/windows/use-color-filters-in-windows-10-43893e44-b8b3-2e27-1a29-b0c15ef0e5ce"
     },
     {
       "name": "Read Aloud",
-      "desc": "",
+      "desc": "Reads all or part of a document",
       "link": "https://support.microsoft.com/en-us/office/listen-to-your-word-documents-5a2de7f3-1ef4-4795-b24e-64fc2731b001"
     },
     {
       "name": "Immersive Reader",
-      "desc": "",
+      "desc": "Reads post, chat messages, and assignments aloud",
       "link": "https://support.microsoft.com/en-us/topic/use-immersive-reader-in-microsoft-teams-a700c0d0-bc53-4696-a94d-4fbc86ac7a9a1"
     },
     {
       "name": "Dictate",
-      "desc": "",
+      "desc": "Helps users create documents, emails, notes, and presentation slide notes by using one’s voice instead of typing it out",
       "link": "https://support.microsoft.com/en-us/office/dictate-in-microsoft-365-eab203e1-d030-43c1-84ef-999b0b9675fe"
     },
     {
       "name": "NVDA (NonVisual Desktop Access)",
-      "desc": "",
+      "desc": "Screen reader for Microsoft Windows computers",
       "link": "https://www.dell.com/Identity/global/LoginOrRegister/a2fbc49e-ac99-4289-830f-774a9a0ce9dd?feir=1"
     },
     {
       "name": "Windows Narrator",
-      "desc": "",
+      "desc": "Assists users through easy interaction with the screen without the use of mouse and narrates and interacts with things on the screen.",
       "link": "https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
     },
     {
       "name": "Natural Reader",
-      "desc": "",
+      "desc": "Read any text such as word doc, webpages, PDF files and emails through a natural-sounding text-to-speech",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     },
     {
       "name": "JAWS (Jobs Access with Speech)",
-      "desc": "",
+      "desc": "Provides speech and Braille output for the most popular computer applications on PC",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     },
     {
       "name": "SofType5",
-      "desc": "",
+      "desc": "A software utility which replaces the functionality of a desktop keyboard with a full feature, on-screen keyboard",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     },
     {
       "name": "ZoomText",
-      "desc": "",
+      "desc": "A stand-alone software that helps user to magnify the text in screen up to 60 times and enable the text to speech feature",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     },
     {
       "name": "Braillenote Touch 32 Plus",
-      "desc": "",
-      "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
-    },
-    {
-      "name": "32\" Monitor",
-      "desc": "",
+      "desc": "Uses Braille literacy to create multiple language profiles and customize them with a large selection of braille codes and voices to choose from",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     },
     {
       "name": "Focus 40 Blue",
-      "desc": "",
+      "desc": "The Focus 40 Blue refreshable braille display provides a compact, tactile interface to your computer",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     }
   ],
   "auditory": [
     {
       "name": "Closed Captions (Teams)",
-      "desc": "",
+      "desc": "Through Teams' live transcription feature, users can view live subtitles of the spoken in-meeting communication",
       "link": "https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
     },
     {
       "name": "Closed Captions (Zoom)",
-      "desc": "",
+      "desc": "Through Zoom’s live transcription feature, users can view live subtitles of the spoken in-meeting communication",
       "link": "https://support.zoom.us/hc/en-us/articles/207279736-Managing-and-viewing-closed-captioning#h_4cb4e874-d574-4e40-ab12-7d8fae1f71cc"
     },
     {
       "name": "Naturally Speaking",
-      "desc": "",
+      "desc": "Helps users voice recognition in dictation with speech transcribed as written text, recognition of spoken commands, and text-to-speech",
       "link": "https://dell.service-now.com/sp?id=sc_cat_item&sys_id=2da66d591b2e68d0167b759d1e4bcb10"
     }
   ],
@@ -100,17 +95,17 @@
   "other": [
     {
       "name": "Windows Ease of Access",
-      "desc": "",
+      "desc": "Contains all the tools such as display, cursor and pointer, magnifier, color filters, high contrast, and narrator",
       "link": "https://support.microsoft.com/en-us/windows/make-your-pc-easier-to-use-1c313f8f-8bc3-4e1c-c1c8-efe173a94845"
     },
     {
       "name": "Accessibility Checker",
-      "desc": "",
+      "desc": "Makes Microsoft Office content easy to read and edit to the receiver of the files",
       "link": "https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f"
     },
     {
-      "name": "Windows Ease of Access",
-      "desc": "",
+      "name": "Microsoft Translator",
+      "desc": "Available for Word, Excel, OneNote, Outlook, and PowerPoint to translate between 90 languages and dialects",
       "link": "https://support.microsoft.com/en-us/topic/translate-text-into-a-different-language-287380e4-a56c-48a1-9977-f2dca89ce93f?ui=en-us&rs=en-us&ad=us"
     }
   ]
