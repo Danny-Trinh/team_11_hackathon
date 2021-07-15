@@ -1,5 +1,5 @@
 .separator {
-  max-width: 1500px;
+  max-width: 90%;
   margin: 30px auto;
   overflow: auto;
   /* min-height: 100px; */
@@ -30,6 +30,7 @@
 
 .header {
   color: #3287c1;
+  padding-left: 5%;
 }
 
 .center {
