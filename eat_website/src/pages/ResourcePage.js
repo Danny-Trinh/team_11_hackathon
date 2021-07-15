@@ -5,37 +5,41 @@ import Services from "../json/services.json";
 import Migrate from "../img/dds__migrate.png";
 
 export default class ResourcePage extends Component {
-  renderResources = (value) => {
+  renderResources = (value, title) => {
     let result = [];
     let num = 1;
     Services[value].forEach((value) => {
       result.push(
-        <div
-          class="card border-light ml-3 mb-3 center shadow-sm"
-          style={{ maxWidth: "20rem", minHeight: "10rem" }}
+        <ul
+          className="list-group list-group-flush"
+          style={{ textAlign: "left" }}
           key={num}
         >
-          <h5 class="card-header">
-            {value.name}
+          <li className="list-group-item m-2">
             <a href={value.link}>
               <img
                 src={Migrate}
-                style={{ float: "right" }}
+                style={{ float: "right", display: "inline" }}
                 alt="link to technology"
               />
             </a>
-          </h5>
-          <div class="card-body">
-            <p class="card-text">{value.desc} </p>
-          </div>
-        </div>
+            <h5 className="card-title">{value.name}</h5>
+            <p className="card-text">{value.desc}</p>
+          </li>
+        </ul>
       );
       num++;
     });
     return (
-      <div class="separator row" style={{ marginTop: 5 }}>
-        {result}
-      </div>
+      <center>
+        <div
+          className="card"
+          style={{ width: "80%", marginTop: 25, marginBottom: 20 }}
+        >
+          <h2 className="card-header header">{title}</h2>
+          {result}
+        </div>
+      </center>
     );
   };
 
@@ -44,24 +48,16 @@ export default class ResourcePage extends Component {
       <div className="container">
         <img
           src={ResourcesHeader}
-          class="img-fluid, center"
-          style={{ maxWidth: "75%" }}
+          className="img-fluid, center"
+          style={{ maxWidth: "65%", marginTop: 25 }}
           alt="Decorative header"
         />
 
-        <h1>
-          <center>Resources</center>
-        </h1>
-        <h2>
-          <center>Assistive Technologies</center>
-        </h2>
-        <h4 className="header" style={{ marginBottom: 0 }}>
-          Visual Accessibility Features
-        </h4>
-        {this.renderResources("visual")}
+        {this.renderResources("visual", "Visual Accessibility Features")}
 
-        <h4 className="header">Auditory Accessibility Features</h4>
-        {this.renderResources("auditory")}
+        {this.renderResources("auditory", "Auditory Accessibility Features")}
+
+        {this.renderResources("other", "Additional Accessibility Features")}
       </div>
     );
   }

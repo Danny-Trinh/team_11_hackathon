@@ -10,6 +10,14 @@ a.custom-link:hover {
   text-decoration: underline;
 }
 
+/* adding on to bootstrap */
+.nav-link {
+  color: white !important;
+}
+.nav-link:hover {
+  cursor: pointer;
+}
+
 /* learning options css */
 .options-container {
   display: flex;

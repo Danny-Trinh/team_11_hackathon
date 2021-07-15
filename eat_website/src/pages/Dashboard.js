@@ -22,8 +22,8 @@ export default class Dashboard extends Component {
 
   renderTechnologies = () => {
     let result = [];
+    let num = 1;
     this.state.disabilities.forEach((disability) => {
-      let num = 1;
       Services[disability.value].forEach((value) => {
         result.push(
           <div className="my-3" key={num}>
@@ -39,6 +39,21 @@ export default class Dashboard extends Component {
         );
         num++;
       });
+    });
+    Services["other"].forEach((value) => {
+      result.push(
+        <div className="my-3" key={num}>
+          <div className="card h-100 border shadow-sm">
+            <div className="card-body">
+              <a className="custom-link" href={value.link}>
+                <h5 className="card-title">{value.name}</h5>
+              </a>
+              <p className="card-text ">{value.desc}</p>
+            </div>
+          </div>
+        </div>
+      );
+      num++;
     });
     return <div className="row row-cols-2 row-cols-md-3">{result}</div>;
   };

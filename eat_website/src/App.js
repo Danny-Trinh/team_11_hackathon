@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import NavBar from "./components/NavBar";
@@ -14,6 +14,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(localStorage.loggedIn === "true");
   return (
     <Router>
       <div
@@ -22,13 +23,15 @@ function App() {
           backgroundColor: "#f7f7f8",
         }}
       >
-        <NavBar />
+        <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
         <Switch>
           <Route exact path="/">
             <Redirect to="/Login" />
           </Route>
           <Route path="/Dashboard" component={Dashboard} exact></Route>
-          <Route path="/Login" component={Login} exact></Route>
+          <Route path="/Login" exact>
+            <Login setLoggedIn={setLoggedIn}></Login>
+          </Route>
           <Route path="/BasicPage" component={BasicPage} exact></Route>
           <Route path="/AboutPage" component={AboutPage} exact></Route>
           <Route path="/ResourcePage" component={ResourcePage} exact></Route>

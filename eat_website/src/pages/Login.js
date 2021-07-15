@@ -10,14 +10,27 @@ export default class Login extends Component {
           initialValues={{
             login_email_addr: "",
             login_pwd: "",
+            email: "",
+            first_name: "",
+            last_name: "",
+            password: "",
           }}
           onSubmit={
             async (values) => {
               // TODO if schedule_repeats is false, do not schedule multiple cases
-              alert("Successful log in user: ", document.getElementById("login_email_addr").value);
+              // alert(
+              //   `Successfully logged in with email: ${values.login_email_addr}${values.email}`
+              // );
               // console.log("HELLO");
-              
-              window.location.href = "http://localhost:3000/Dashboard";
+
+              // this.props.history.push("/Dashboard"); why this no work ;-;
+              localStorage.setItem("loggedIn", true);
+              this.props.setLoggedIn(true);
+              if (window.location.href.indexOf("localhost") !== -1)
+                window.location.href = "http://localhost:3000/Dashboard";
+              else
+                window.location.href =
+                  "https://main.d256nnve9tolai.amplifyapp.com/Dashboard";
             }
 
             // console.log("Posted: " + JSON.stringify(values, null, 2));
@@ -33,85 +46,80 @@ export default class Login extends Component {
           }
         >
           {(props) => (
-            
             <Form>
-              <div class="container">
-                <div class="row align-items-start">
-                  <div class="col">
-                  <h2>Log In</h2>
+              <div className="container">
+                <div className="row align-items-start">
+                  <div className="col">
+                    <h2>Log In</h2>
                     <div className="mb-3">
                       <label for="email_addr" class="form-label">
                         Dell Email*
                       </label>
                       <Field
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         name="login_email_addr"
                         id="login_email_addr"
                       ></Field>
                     </div>
-                    <div class="mb-3">
-                      <label for="pwd" class="form-label">
+                    <div className="mb-3">
+                      <label for="pwd" className="form-label">
                         Password*
                       </label>
                       <Field
                         type="password"
-                        class="form-control"
+                        className="form-control"
                         name="login_pwd"
                         id="login_pwd"
                       ></Field>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" className="btn btn-primary">
                       Log In
                     </button>
                   </div>
-                  <div class="col">
-                  <h2>Create an Account</h2>
-                    <div class="mb-3">
-                      <label for="pwd" class="form-label">
+                  <div className="col">
+                    <h2>Create an Account</h2>
+                    <div className="mb-3">
+                      <label for="pwd" className="form-label">
                         First Name
                       </label>
                       <Field
                         type="text"
-                        class="form-control"
-                        name="login_pwd"
-                        id="login_pwd"
+                        className="form-control"
+                        name="first_name"
                       ></Field>
                     </div>
-                    <div class="mb-3">
-                      <label for="pwd" class="form-label">
+                    <div className="mb-3">
+                      <label for="pwd" className="form-label">
                         Last Name
                       </label>
                       <Field
                         type="text"
-                        class="form-control"
-                        name="login_pwd"
-                        id="login_pwd"
+                        className="form-control"
+                        name="last_name"
                       ></Field>
                     </div>
                     <div className="mb-3">
-                      <label for="email_addr" class="form-label">
+                      <label for="email_addr" className="form-label">
                         Dell Email*
                       </label>
                       <Field
                         type="text"
-                        class="form-control"
-                        name="login_email_addr"
-                        id="login_email_addr"
+                        className="form-control"
+                        name="email"
                       ></Field>
                     </div>
-                    <div class="mb-3">
-                      <label for="pwd" class="form-label">
+                    <div className="mb-3">
+                      <label for="pwd" className="form-label">
                         Password*
                       </label>
                       <Field
                         type="password"
-                        class="form-control"
-                        name="login_pwd"
-                        id="login_pwd"
+                        className="form-control"
+                        name="password"
                       ></Field>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" className="btn btn-primary">
                       Sign Up
                     </button>
                   </div>

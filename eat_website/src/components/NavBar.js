@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { SiDell } from "react-icons/si";
 import { Link } from "react-router-dom";
+import Logo from "../img/dds__brand-delltechnologies.png";
+import Migrate from "../img/dds__migrate.png";
 
 // import "../css/sb-admin-2.css";
 
@@ -15,11 +17,13 @@ export default class NavBar extends Component {
           style={{ backgroundColor: "#0076CE" }}
         >
           <div className="container-fluid ">
-            <Link className="navbar-brand" to="/Dashboard">
-              <SiDell size="50" className="me-1" />
-              <span>Technologies</span>
-            </Link>
-
+            <a className="navbar-brand" href="/Dashboard">
+              <img
+                src={Migrate}
+                style={{ float: "right", display: "inline" }}
+                alt=""
+              />
+            </a>
             <button
               className="navbar-toggler"
               type="button"
@@ -36,20 +40,22 @@ export default class NavBar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li className="nav-item">
-                  <Link
-                    className="nav-link "
-                    aria-current="page"
-                    to="/Dashboard"
-                  >
-                    Dashboard
-                  </Link>
-                </li>
-                <li className="nav-item ">
+                {this.props.loggedIn && (
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link "
+                      aria-current="page"
+                      to="/Dashboard"
+                    >
+                      Dashboard
+                    </Link>
+                  </li>
+                )}
+                {/* <li className="nav-item ">
                   <Link className="nav-link" to="/BasicPage">
                     Basic Page
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item ">
                   <Link className="nav-link" to="/AboutPage">
                     About Us
@@ -60,16 +66,31 @@ export default class NavBar extends Component {
                     Resources
                   </Link>
                 </li>
-                {/* <li className="nav-item">
-                  <Link
-                    className="nav-link "
-                    to="/Login"
-                    tabIndex="-1"
-                    aria-disabled="true"
-                  >
-                    Login
-                  </Link>
-                </li> */}
+                {!this.props.loggedIn && (
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link "
+                      to="/Login"
+                      tabIndex="-1"
+                      aria-disabled="true"
+                    >
+                      Login
+                    </Link>
+                  </li>
+                )}
+                {this.props.loggedIn && (
+                  <li className="nav-item">
+                    <span
+                      className="nav-link"
+                      onClick={() => {
+                        localStorage.setItem("loggedIn", false);
+                        this.props.setLoggedIn(false);
+                      }}
+                    >
+                      Sign Out
+                    </span>
+                  </li>
+                )}
                 {/* <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
