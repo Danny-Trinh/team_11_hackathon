@@ -60,7 +60,7 @@ export default class NavBar extends Component {
                     Resources
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     className="nav-link "
                     to="/Login"
@@ -69,7 +69,7 @@ export default class NavBar extends Component {
                   >
                     Login
                   </Link>
-                </li>
+                </li> */}
                 {/* <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"

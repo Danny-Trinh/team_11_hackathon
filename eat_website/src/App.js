@@ -25,7 +25,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/">
-            <Redirect to="/DashBoard" />
+            <Redirect to="/Login" />
           </Route>
           <Route path="/Dashboard" component={Dashboard} exact></Route>
           <Route path="/Login" component={Login} exact></Route>
