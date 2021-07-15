@@ -12,7 +12,7 @@ a.custom-link:hover {
 
 /* adding on to bootstrap */
 .nav-link {
-  color: white !important;
+  color: #eefeee !important;
 }
 .nav-link:hover {
   cursor: pointer;

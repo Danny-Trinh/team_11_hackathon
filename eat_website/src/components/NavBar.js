@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { SiDell } from "react-icons/si";
 import { Link } from "react-router-dom";
-import Logo from "../img/dds__brand-delltechnologies.png";
-import Migrate from "../img/dds__migrate.png";
+import Logo from "../img/logo.png";
 
 // import "../css/sb-admin-2.css";
 
@@ -18,11 +16,7 @@ export default class NavBar extends Component {
         >
           <div className="container-fluid ">
             <a className="navbar-brand" href="/Dashboard">
-              <img
-                src={Migrate}
-                style={{ float: "right", display: "inline" }}
-                alt=""
-              />
+              <img src={Logo} style={{ maxHeight: 25 }} alt="" />
             </a>
             <button
               className="navbar-toggler"
@@ -85,6 +79,11 @@ export default class NavBar extends Component {
                       onClick={() => {
                         localStorage.setItem("loggedIn", false);
                         this.props.setLoggedIn(false);
+                        if (window.location.href.indexOf("localhost") !== -1)
+                          window.location.href = "http://localhost:3000/Login";
+                        else
+                          window.location.href =
+                            "https://main.d256nnve9tolai.amplifyapp.com/Login";
                       }}
                     >
                       Sign Out
