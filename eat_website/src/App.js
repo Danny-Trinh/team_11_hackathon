@@ -26,7 +26,7 @@ function App() {
         <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
         <Switch>
           <Route exact path="/">
-            <Redirect to="/Login" />
+            <Redirect to="/Dashboard" />
           </Route>
           <Route path="/Dashboard" component={Dashboard} exact></Route>
           <Route path="/Login" exact>

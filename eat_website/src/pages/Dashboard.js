@@ -69,7 +69,7 @@ export default class Dashboard extends Component {
                 style={{ backgroundColor: "#e8f4f8" }}
               >
                 <div className="card-body">
-                  <p>Name: Danny Trinh</p>
+                  <p>Name: John Doe</p>
                   <p>Resources Needed: </p>
 
                   <Select

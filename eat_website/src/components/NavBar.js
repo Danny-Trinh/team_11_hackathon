@@ -34,22 +34,15 @@ export default class NavBar extends Component {
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-                {this.props.loggedIn && (
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link "
-                      aria-current="page"
-                      to="/Dashboard"
-                    >
-                      Dashboard
-                    </Link>
-                  </li>
-                )}
-                {/* <li className="nav-item ">
-                  <Link className="nav-link" to="/BasicPage">
-                    Basic Page
+                <li className="nav-item">
+                  <Link
+                    className="nav-link "
+                    aria-current="page"
+                    to="/Dashboard"
+                  >
+                    Dashboard
                   </Link>
-                </li> */}
+                </li>
                 <li className="nav-item ">
                   <Link className="nav-link" to="/AboutPage">
                     About Us
